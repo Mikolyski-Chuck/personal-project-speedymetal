@@ -11,10 +11,12 @@
   --font-base: 18px;
   --small-font: 0.8em;
   --large-font: 1.2em;
+  
 }
 
 * {
   box-sizing: border-box;
+  border: 2px solid black;
 }
 
 body {
@@ -522,6 +524,7 @@ fieldset {
   #quick-look-btn {
     display: none;
   }
+}
 
 #orders tr:nth-child(even) {
   border: 5px solid black;
