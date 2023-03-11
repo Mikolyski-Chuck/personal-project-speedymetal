@@ -1,7 +1,7 @@
 
 const baseURL = "https://metals-api.com/api/";
 const access_key = "6h6kitx11nk5ch2m3zlyc7ikahowofpu8uv8tpl9rfbuv2p8bwd3vugimk6h";
-const endPoint = "symbols";
+
 
 async function convertToJson(res) {
   let resJ = await res.json();
@@ -15,7 +15,7 @@ async function convertToJson(res) {
 export default class ExternalServices {
   constructor() {
   }
-  async getSymbol() {
+  async getData(endPoint) {
     const response = await fetch(baseURL + endPoint + "?access_key=" + access_key);
     const metalData = convertToJson(response);
     return metalData;

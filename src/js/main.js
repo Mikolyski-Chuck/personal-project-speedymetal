@@ -1,11 +1,11 @@
 import ExternalServices from "./ExternalServices.mjs";
-//import { loadHeaderFooter } from "./utils.mjs";
+import { loadHeaderFooter } from "./utils.mjs";
 
-//loadHeaderFooter();
+loadHeaderFooter();
 async function callApi() {
   const apiServices = new ExternalServices();
-  let symbols = await apiServices.getSymbol();
-  console.log(symbols);
+  let metal = await apiServices.getData("latest");
+  console.log(metal);
 }
 
 callApi();

@@ -33,4 +33,35 @@ header {
   display: flex;
   justify-content: space-between;
   flex-flow: column;
+  background-color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+.logo a {
+  width: 75%;
+  text-align: center;
+  padding: .5em;
+  background-color: gray;
+}
+
+#nav {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
+#nav a {
+  padding: .5em;
+  width: 20%;
+  text-align: center;
+  background-color: grey;
 }

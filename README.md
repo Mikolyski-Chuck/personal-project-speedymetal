@@ -9,6 +9,7 @@ Charles Mikolyski Personal Project speedyMetal.
 
 - `npm install`
 - `npm run start` starts up a local server and updates on any JS or CSS/SCSS changes.
+- `npm run preview` starts up a local server and previews the build directory.
 
 ## Other commands
 
