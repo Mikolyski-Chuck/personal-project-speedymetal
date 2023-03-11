@@ -8,4 +8,4 @@ async function callApi() {
   console.log(metal);
 }
 
-callApi();
+//callApi();
